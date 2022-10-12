@@ -28,7 +28,7 @@ function workbook(n, k, arr) {
     return valuesTotal;
   }, DEFAULT_VALUES);
 
-  console.log(result)
+  return result.special;
 }
 
-workbook(5, 3, [4, 2, 6, 1, 10]);
+console.log(workbook(5, 3, [4, 2, 6, 1, 10]));
