@@ -1,5 +1,4 @@
 function calPoints(ops) {
-  console.log(ops)
   const allScores = ops.reduce((scores, item) => {
     const newScores = [...scores];
     const lastScore = newScores[newScores.length - 1];
