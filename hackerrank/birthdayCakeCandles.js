@@ -1,31 +1,24 @@
 // https://www.hackerrank.com/challenges/birthday-cake-candles/problem
 
 function birthdayCakeCandles(candles) {
-  // Write your code here
-  const candleInitialInfo = {
-    maxHeight: null,
-    candlesWithMax: 0,
-  };
+  const tallestNumber = -Infinity;
+  const tallestCount = 0;
 
-  const candlesInfos = candles.reduce((info, currentCandle) => {
-    const infoClone = {...info};
+  for(const candle in candles) {
+    switch(true) {
+      case candle > tallestNumber:
+        tallestNumber = candle;
+        tallestCount = 1;
+        break;
+      case candle === tallestNumber:
+        tallestCount += 1;
+        break;
+      default:
+        continue;
+    }
+  }
 
-      switch(true) {
-        case currentCandle > infoClone.maxHeight:
-          infoClone.maxHeight = currentCandle;
-          infoClone.candlesWithMax = 1;
-          break;
-        case currentCandle === infoClone.maxHeight:
-          infoClone.candlesWithMax += 1;
-          break;
-        default:
-          return infoClone;
-      }
-
-      return infoClone;
-  }, candleInitialInfo);
-
-  return candlesInfos.candlesWithMax;
+  return tallestCount;
 }
 
 const candlesExample = [3, 2, 1, 3];
