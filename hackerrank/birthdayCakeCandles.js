@@ -1,4 +1,9 @@
 // https://www.hackerrank.com/challenges/birthday-cake-candles/problem
+/**
+ *
+ * @param {Array<number>} candles
+ * @returns {number}
+ */
 
 function birthdayCakeCandles(candles) {
   const tallestNumber = -Infinity;

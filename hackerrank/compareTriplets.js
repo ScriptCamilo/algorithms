@@ -1,19 +1,24 @@
 // https://www.hackerrank.com/challenges/compare-the-triplets/problem
+/**
+ *
+ * @param {Array<number>} firstPersonPoints
+ * @param {Array<number>} secondPersonPoints
+ * @returns {Array<number>}
+ */
 
-function compareTriplets(a, b) {
-  const finalPoints = a.reduce((points, firstPersonRate, currentIndex) => {
-      const [firstPersonPoint, secondPersonPoint] = points;
-      const secondPersonRate = b[currentIndex];
+function compareTriplets(firstPersonPoints, secondPersonPoints) {
+  const finalPoints = firstPersonPoints.reduce((points, firstPersonRate, currentIndex) => {
+    const [firstCurrentPoint, secondCurrentPoint] = points;
+    const secondPersonRate = secondPersonPoints[currentIndex];
 
-      if (firstPersonRate > secondPersonRate) {
-          return [firstPersonPoint + 1, secondPersonPoint];
-      }
-
-      if (firstPersonRate < secondPersonRate) {
-          return [firstPersonPoint, secondPersonPoint + 1];
-      }
-
-      return [firstPersonPoint, secondPersonPoint];
+    switch(true) {
+      case firstPersonRate > secondPersonRate:
+        return [firstCurrentPoint + 1, secondCurrentPoint];
+      case firstPersonRate < secondPersonRate:
+        return [firstCurrentPoint, secondCurrentPoint + 1];
+      default:
+        return points;
+    }
   }, [0, 0]);
 
   return finalPoints;

@@ -1,4 +1,6 @@
+// https://www.hackerrank.com/challenges/a-very-big-sum/problem
 /**
+ *
  * @param {Array<number>} numberArray
  * @returns {number}
  */

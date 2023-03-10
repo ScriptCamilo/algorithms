@@ -1,7 +1,11 @@
 // https://www.hackerrank.com/challenges/grading/problem
+/**
+ *
+ * @param {Array<number>} grades
+ * @returns {Array<number>}
+ */
 
 function gradingStudents(grades) {
-  // Write your code here
   const newGrades = [];
 
   for (const grade of grades) {
@@ -20,6 +24,5 @@ function gradingStudents(grades) {
 }
 
 const grades = [73, 67, 38, 33];
-const result = gradingStudents(grades);
 
-console.log(result);
+console.log(gradingStudents(grades));

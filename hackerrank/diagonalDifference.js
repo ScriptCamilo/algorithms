@@ -1,7 +1,11 @@
 // https://www.hackerrank.com/challenges/diagonal-difference/problem
+/**
+ *
+ * @param {Array<Array<number>>} arr
+ * @returns {number}
+ */
 
 function diagonalDifference(arr) {
-  // Write your code here
   const leftToRight = arr.reduce((sum, matrix, matrixIndex) => {
       const matrixNumber = matrix[matrixIndex];
       return sum + matrixNumber;
@@ -16,4 +20,6 @@ function diagonalDifference(arr) {
   return Math.abs(leftToRight - rightToLeft);
 };
 
-console.log(diagonalDifference([[1, 2, 3], [4, 5, 6], [7, 8, 9]])); // output: 2
+const arrayExample = [[1, 2, 3], [4, 5, 6], [9, 8, 9]];
+
+console.log(diagonalDifference(arrayExample)); // output: 2
