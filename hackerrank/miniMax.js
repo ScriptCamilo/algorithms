@@ -1,7 +1,10 @@
 // https://www.hackerrank.com/challenges/mini-max-sum/problem
+/**
+ *
+ * @param {Array<number>} arr
+ */
 
 function miniMaxSum(arr) {
-  // Write your code here
   let maxSum;
   let minSum;
 

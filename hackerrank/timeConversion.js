@@ -1,7 +1,11 @@
 // https://www.hackerrank.com/challenges/time-conversion/problem
+/**
+ *
+ * @param {string} s
+ * @returns {string}
+ */
 
 function timeConversion(s) {
-  // Write your code here
   let hours = s.slice(0, 2);
   let convertedHours = hours;
   const indexOfAm = s.indexOf('AM');

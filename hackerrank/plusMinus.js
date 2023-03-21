@@ -1,7 +1,10 @@
 // https://www.hackerrank.com/challenges/plus-minus/problem
+/**
+ *
+ * @param {Array<number>} arr
+ */
 
 function plusMinus(arr) {
-  // Write your code here
   const ratiosBase = arr.length;
   let positiveRatios = 0;
   let negativeRatios = 0;

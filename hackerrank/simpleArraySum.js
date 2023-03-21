@@ -1,7 +1,11 @@
 // https://www.hackerrank.com/challenges/simple-array-sum/problem
+/**
+ *
+ * @param {Array} array
+ * @returns {number}
+ */
 
 function simpleArraySum(array){
-  // Write your code here
   const sum = array.reduce((sumValue, num) => {
       return sumValue + num;
   }, 0);

@@ -1,7 +1,10 @@
 // https://www.hackerrank.com/challenges/staircase/problem
+/**
+ *
+ * @param {number} n
+ */
 
 function staircase(n) {
-  // Write your code here
   let message = ' '.repeat(n).split('');
 
   for (let i = n - 1; i >= 0; i--) {
