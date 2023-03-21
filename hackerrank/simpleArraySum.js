@@ -1,4 +1,9 @@
 // https://www.hackerrank.com/challenges/simple-array-sum/problem
+/**
+ *
+ * @param {Array} array
+ * @returns {number}
+ */
 
 function simpleArraySum(array){
   // Write your code here

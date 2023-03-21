@@ -1,4 +1,11 @@
 // https://www.hackerrank.com/challenges/lisa-workbook/problem
+/**
+ *
+ * @param {number} n
+ * @param {number} k
+ * @param {Array<number>} arr
+ * @returns {number}
+ */
 
 function workbook(n, k, arr) {
   // Write your code here

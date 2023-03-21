@@ -1,4 +1,8 @@
 // https://www.hackerrank.com/challenges/staircase/problem
+/**
+ *
+ * @param {number} n
+ */
 
 function staircase(n) {
   // Write your code here

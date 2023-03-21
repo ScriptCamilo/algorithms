@@ -1,4 +1,9 @@
 // https://www.hackerrank.com/challenges/time-conversion/problem
+/**
+ *
+ * @param {string} s
+ * @returns {string}
+ */
 
 function timeConversion(s) {
   // Write your code here
