@@ -31,6 +31,13 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
   console.log(orangesInside);
 }
 
+/**
+ *
+ * @param {number} fruitPosition
+ * @param {{ start: number, end: number }} houseRange
+ * @returns {boolean}
+ */
+
 function isFruitInsideHouse(fruitPosition, houseRange) {
   return fruitPosition >= houseRange.start && fruitPosition <= houseRange.end;
 }
